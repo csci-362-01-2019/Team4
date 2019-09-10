@@ -2,7 +2,6 @@
 #script lists contents of top-level directory
 #Evan Tanner, Brandon Priester, Cameron Dey
 
-cd ..
 ls | cat > tempContents.txt
 sed '/tempContents.txt/d' tempContents.txt > contents.txt
 rm tempContents.txt
