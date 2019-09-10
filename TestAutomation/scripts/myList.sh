@@ -1,6 +1,6 @@
 #/bin/bash
 #script lists contents of top-level directory
-#Evan Tanner
+#Evan Tanner, Brandon Priester, Cameron Dey
 
 cd ..
 ls | cat > tempContents.txt
