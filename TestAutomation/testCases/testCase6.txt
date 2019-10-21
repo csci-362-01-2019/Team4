@@ -1,5 +1,5 @@
 6
 OpenmrsUtil.java
 convertToInteger(Long longValue)
--2147483648
-"-2147483648 cannot be cast to Integer without changing its value."
+-2147483649
+"-2147483649 cannot be cast to Integer without changing its value."
