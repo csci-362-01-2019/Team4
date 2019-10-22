@@ -6,32 +6,29 @@ public class methodDriver1 {
 		
 		System.out.println("Hello World!");
 		
-		
-		if (args.length>=1) 
-		{
-			System.out.print("Your input is: ");
-		
-			for (int i = 0; i < args.length; i++) {
-				
-				System.out.print(args[i] + " ");
-				
-			}
-
-			System.out.println();
-			System.out.print("Your output is: ");
-
-			int output;			
-
-			output = OpenmrsUtil.convertToInteger(Long.parseLong(args[0]));
-			System.out.println(output);
-		
+		System.out.print("Your input is: ");
+	
+		for (int i = 0; i < args.length; i++) {
+			
+			System.out.print(args[i] + " ");
+			
 		}
-		else
-		{
 
-			System.out.println("You did not provide an input");
+		System.out.println();
+		System.out.print("Your output is: ");
 
-		}		
+		long input;
+		int output;
+
+		if(args.length>=1)
+		{			
+			input = Long.parseLong(args[0]);
+			output = OpenmrsUtil.convertToInteger(input);
+			System.out.print(output);
+		}
+
+		System.out.println();
+
 	}
 	
 }
