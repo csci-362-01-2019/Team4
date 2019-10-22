@@ -18,16 +18,19 @@ public class methodDriver1 {
 		System.out.print("Your output is: ");
 
 		long input;
-		int output;
+		String output;
 
-		if(args.length>=1)
-		{			
+		try
+		{
 			input = Long.parseLong(args[0]);
-			output = OpenmrsUtil.convertToInteger(input);
-			System.out.print(output);
+			output = "" + OpenmrsUtil.convertToInteger(input);
+		}
+		catch(Exception e)
+		{
+			output = e.getMessage();
 		}
 
-		System.out.println();
+		System.out.println(output);
 
 	}
 	
