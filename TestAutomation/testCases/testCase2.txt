@@ -1,5 +1,5 @@
 2
 OpenmrsUtil.java
 convertToInteger(Long longValue)
-0
-0
+2147483647
+2147483647
