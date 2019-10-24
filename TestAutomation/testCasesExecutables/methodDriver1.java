@@ -8,9 +8,19 @@ public class methodDriver1 {
 		long input;
 		String output;
 
-		try
+		try                                                //checks if the input isn't a number or bigger than a long
 		{
 			input = Long.parseLong(args[0]);
+		}
+		catch(NumberFormatException e)
+		{
+			System.out.println("Number Format Exception");
+			return;
+		}
+
+
+		try
+		{
 			output = "" + OpenmrsUtil.convertToInteger(input);
 		}
 		catch(Exception e)
