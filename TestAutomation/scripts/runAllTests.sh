@@ -2,7 +2,7 @@
 
 
 for file in testCases/*.txt; do	
-	TESTID=sed -n '1p' $file
+	TESTID=$(sed -n '1p' $file)
 	sed -n '1p' $file > ./oracles/testCaseOracle$TESTID.txt
 done
 
