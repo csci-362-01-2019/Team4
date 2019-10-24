@@ -2,6 +2,7 @@
 
 rm -rf ./oracles/*
 rm -rf ./temp/*
+echo "..." > ./temp/DummyText.txt
 
 
 
