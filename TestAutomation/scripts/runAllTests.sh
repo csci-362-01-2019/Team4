@@ -11,6 +11,10 @@ for file in testCases/*.txt; do
 	sed -n '5p' $file > ./oracles/testCaseOracle$TESTID.txt
 done
 
+
+for file in scripts/subDrivers/*.sh; do
+	./$file
+done
 #./scripts/subDrivers/subDriver1.sh
 #./scripts/subDrivers/subDriver2.sh
 #./scripts/subDrivers/subDriver3.sh
