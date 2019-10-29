@@ -1,0 +1,13 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Test Output.html</title>
+</head>
+<body>
+	<h1> OpenMRS Test Framework</h1>
+	<hr>
+	<u1> 
+
+		
+
+

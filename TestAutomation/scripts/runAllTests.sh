@@ -38,4 +38,13 @@ for file in oracles/*.txt; do
   
   echo -e "<pre>Test $count\nClass: $class\nMethod: $method\nInput: $realIn\nOracle: $oracle\nResult: $result\n</pre>" >> ./reports/finalReport.txt
   
+  
 done
+
+cat ./docs/finalReportTempP1.txt > ./reports/finalReport.html
+cat ./reports/finalReport.txt >> ./reports/finalReport.html
+cat ./docs/finalReportTempP3.txt >> ./reports/finalReport.html
+
+
+
+firefox ./reports/finalReport.html
