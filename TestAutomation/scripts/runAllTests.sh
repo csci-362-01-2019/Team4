@@ -47,4 +47,4 @@ cat ./docs/finalReportTempP3.txt >> ./reports/finalReport.html
 
 
 
-firefox ./reports/finalReport.html
+firefox ./reports/finalReport.html&
