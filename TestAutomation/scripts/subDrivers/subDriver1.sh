@@ -16,6 +16,9 @@ javac -cp openmrs-api.jar: methodDriver1.java
 #back to root
 cd .. 
 
+method="convertToInteger(Long longValue)" 
+
+
 #Executing the Java file!
 #This needs to do a loop through the testcases
 #and see which ones it to test by method name
@@ -35,9 +38,3 @@ for file in ./testCases/*.txt; do
     
   fi
 done
-
-
-
-
-
-
