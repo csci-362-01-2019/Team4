@@ -3,8 +3,10 @@
 #removes all files
 rm -rf ./oracles/*
 rm -rf ./temp/*
+rm -rf ./reports/*
 echo "..." > ./temp/DummyText
 echo "..." > ./oracles/DummyText
+echo "..." > ./reports/DummyText
 
 
 #getting the oracles from file
