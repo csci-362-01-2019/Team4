@@ -16,7 +16,7 @@ javac -cp openmrs-api.jar: methodDriver1.java
 #back to root
 cd .. 
 
-method="convertToInteger(Long longValue)" 
+driver="subDriver1" 
 
 
 #Executing the Java file!
@@ -25,16 +25,16 @@ method="convertToInteger(Long longValue)"
 
 
 for file in ./testCases/*.txt; do
-	temp=$(sed -n 3p $file)
-	if [ "$temp" == "$method" ]
+	temp=$(sed -n 6p $file)
+	if [ "$temp" == "$driver" ]
 	then
 		inputVariable=$(sed -n 4p $file)
-    testID=$(sed -n 1p $file)
+    	testID=$(sed -n 1p $file)
     
-    cd ./testCasesExecutables/
+    	cd ./testCasesExecutables/
 		output=$(java -cp openmrs-api.jar: methodDriver1 $inputVariable)
-    cd ..
-    echo $output > ./temp/outputTest$testID.txt
+    	cd ..
+    	echo $output > ./temp/outputTest$testID.txt
     
   fi
 done
