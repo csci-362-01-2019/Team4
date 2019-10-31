@@ -26,9 +26,10 @@ for file in oracles/*.txt; do
 	count=$((count+1))
   realOut=$(cat ./temp/outputTest$count.txt)
   realIn=$(sed -n '4p' ./testCases/testCase$count.txt)
-  oracle=$(cat $file)
+  oracle=$(cat ./oracles/testOracle$count.txt)
   method=$(sed -n '3p' ./testCases/testCase$count.txt)
   class=$(sed -n '2p' ./testCases/testCase$count.txt)
+  requirement=$(sed -n '7p' ./testCases/testCase$count.txt)
   
   result="Fail"
   if [ "$realOut" == "$oracle" ]
@@ -36,7 +37,7 @@ for file in oracles/*.txt; do
   	result="Pass"
   fi
   
-  echo -e "<pre>Test $count\nClass: $class\nMethod: $method\nInput: $realIn\nOracle: $oracle\nResult: $result\n</pre>" >> ./reports/finalReport.txt
+  echo -e "<pre>Test $count\nClass: $class\nMethod: $method\nRequirement: $requirement\nInput: $realIn\nOracle: $oracle\nResult: $result\n</pre>" >> ./reports/finalReport.txt
   
   
 done

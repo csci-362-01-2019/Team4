@@ -14,6 +14,7 @@
 <pre>Test 1
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
+Requirement: Should return a long value in input form
 Input: 0
 Oracle: 0
 Result: Pass
@@ -21,6 +22,7 @@ Result: Pass
 <pre>Test 2
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
+Requirement: Should return a long value in input form
 Input: 2147483647
 Oracle: 2147483647
 Result: Pass
@@ -28,6 +30,7 @@ Result: Pass
 <pre>Test 3
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
+Requirement: Should return a long value in input form
 Input: 2147483648
 Oracle: 2147483648 cannot be cast to Integer without changing its value.
 Result: Pass
@@ -35,6 +38,7 @@ Result: Pass
 <pre>Test 4
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
+Requirement: Should return a long value in input form
 Input: -2147483648
 Oracle: -2147483648
 Result: Pass
@@ -42,16 +46,50 @@ Result: Pass
 <pre>Test 5
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
+Requirement: Should return a long value in input form
 Input: -2147483649
 Oracle: -2147483649 cannot be cast to Integer without changing its value.
 Result: Pass
 </pre>
 <pre>Test 6
 Class: OpenmrsUtil.java
-Method: convertToInteger(Long longValue)
-Input: -Sup
-Oracle: Number Format Exception
+Method: containsOnlyDigits(String test)
+Requirement: Should return true if the passed string contains only numeric characters
+Input: 123451612
+Oracle: true
 Result: Pass
+</pre>
+<pre>Test 7
+Class: OpenmrsUtil.java
+Method: containsOnlyDigits(String test)
+Requirement: Should return true if the passed string contains only numeric characters
+Input: a1012
+Oracle: false
+Result: Pass
+</pre>
+<pre>Test 8
+Class: OpenmrsUtil.java
+Method: containsOnlyDigits(String test)
+Requirement: Should return true if the passed string contains only numeric characters
+Input: 
+Oracle: false
+Result: Pass
+</pre>
+<pre>Test 9
+Class: OpenmrsUtil.java
+Method: containsOnlyDigits(String test)
+Requirement: Should return true if the passed string contains only numeric characters
+Input: 12344 854334
+Oracle: true
+Result: Pass
+</pre>
+<pre>Test 10
+Class: OpenmrsUtil.java
+Method: containsOnlyDigits(String test)
+Requirement: Should return true if the passed string contains only numeric characters
+Input: 12344 85a334
+Oracle: false
+Result: Fail
 </pre>
 
 	</u1>

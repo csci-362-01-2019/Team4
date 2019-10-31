@@ -1,7 +1,7 @@
-6
+7
 OpenmrsUtil.java
 containsOnlyDigits(String test)
-123451612
-true
+a1012
+false
 subDriver2
 Should return true if the passed string contains only numeric characters
