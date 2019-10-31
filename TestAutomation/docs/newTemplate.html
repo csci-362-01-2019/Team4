@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table{
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+td, th {
+border: 5 px solid #dddddd;
+text-align: left;
+padding: 8px:
+}
+tr: nth-child(even){
+background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h2> Test Report </h2>
+<table>
+<tr>
+<th> Test # </th>	
+<th> Class </th>
+<th> Method </th>
+<th> Input </th>
+<th> Oracle </th>
+<th> Result </th>
+</tr>
+<tr>
+<td> Test 1 </td>
+<td> OpenmrsUtil.java </td>
+<td> convertToInteger(Long longValue) </td>
+<td> 0 </td>
+<td> 0 </td>
+<td> Pass </td>
+</tr>
+<tr>
+<td> Test 2 </td>
+<td> OpenmrsUtil.java </td>
+<td> convertToInteger(Long longValue) </td>
+<td> 2147483647 </td>
+<td> 2147483647 </td>
+<td> Pass </td>
+</tr>
+<tr>
+<td> Test 3 </td>
+<td> OpenmrsUtil.java </td>
+<td> convertToInteger(Long longValue) </td>
+<td> 2147483648 </td>
+<td> 2147483648 cannot be cast to Integer without changing its value. </td>
+<td> Pass </td>
+</tr>
+<tr>
+<td> Test 4 </td>
+<td> OpenmrsUtil.java </td>
+<td> convertToInteger(Long longValue) </td>
+<td> -2147483648 </td>
+<td> -2147483648 </td>
+<td> Pass </td>
+</tr>
+<tr>
+<td> Test 5 </td>
+<td> OpenmrsUtil.java </td>
+<td> convertToInteger(Long longValue) </td>
+<td> -2147483649 </td>
+<td> -2147483649 </td>
+<td> Pass </td>
+</tr>
+</table>
+</body>
+</html>
