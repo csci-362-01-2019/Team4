@@ -1,14 +1,5 @@
 #!/bin/bash
 
-
-#NOT NEEDED IF RAN FROM MAIN SCRIPT!!!!!
-# Going to the root file!
-#echo $PWD
-#cd ..
-#echo $PWD
-#cd ..
-#echo $PWD
-
 # Compiling the Java file!
 cd ./testCasesExecutables/
 javac -cp openmrs-api.jar: methodDriver1.java

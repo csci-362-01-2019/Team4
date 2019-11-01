@@ -3,5 +3,5 @@ OpenmrsUtil.java
 convertToInteger(Long longValue)
 2147483647
 2147483647
-subDriver1
+driver1
 Should return a long value in input form

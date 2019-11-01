@@ -1,6 +1,6 @@
 import org.openmrs.util.OpenmrsUtil;
 
-public class methodDriver1 {
+public class driver1 {
 	
 	public static void main(String args[]) 
 	{
