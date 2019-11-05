@@ -4,4 +4,4 @@ containsOnlyDigits(String test)
 a1012
 false
 driver2
-Should return true if the passed string contains only numeric characters
+Returns true only if contains numeric digits

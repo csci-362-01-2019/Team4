@@ -4,4 +4,4 @@ convertToInteger(Long longValue)
 2147483647
 2147483647
 driver1
-Should return a long value in input form
+Returns an Integer from a Long
