@@ -4,6 +4,7 @@
 rm -rf ./oracles/*.txt
 rm -rf ./temp/*.txt
 rm -rf ./reports/*.txt
+rm -rf ./reports/finalReport.html
 
 #################################
 #Compile all "driver" Java files#
