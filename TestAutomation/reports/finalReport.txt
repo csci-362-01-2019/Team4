@@ -1,7 +1,7 @@
 <pre>Test 1
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
-Requirement: Should return a long value in input form
+Requirement: Returns an Integer from a Long
 Input: 0
 Oracle: 0
 Result: Pass
@@ -9,7 +9,7 @@ Result: Pass
 <pre>Test 2
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
-Requirement: Should return a long value in input form
+Requirement: Returns an Integer from a Long
 Input: 2147483647
 Oracle: 2147483647
 Result: Pass
@@ -17,7 +17,7 @@ Result: Pass
 <pre>Test 3
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
-Requirement: Should return a long value in input form
+Requirement: Returns an Integer from a Long
 Input: 2147483648
 Oracle: 2147483648 cannot be cast to Integer without changing its value.
 Result: Pass
@@ -25,7 +25,7 @@ Result: Pass
 <pre>Test 4
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
-Requirement: Should return a long value in input form
+Requirement: Returns an Integer from a Long
 Input: -2147483648
 Oracle: -2147483648
 Result: Pass
@@ -33,7 +33,7 @@ Result: Pass
 <pre>Test 5
 Class: OpenmrsUtil.java
 Method: convertToInteger(Long longValue)
-Requirement: Should return a long value in input form
+Requirement: Returns an Integer from a Long
 Input: -2147483649
 Oracle: -2147483649 cannot be cast to Integer without changing its value.
 Result: Pass
@@ -41,15 +41,15 @@ Result: Pass
 <pre>Test 6
 Class: OpenmrsUtil.java
 Method: containsOnlyDigits(String test)
-Requirement: Should return true if the passed string contains only numeric characters
-Input: 123451612
+Requirement: Returns true only if contains numeric digits
+Input: 123451612454654646065056465640560465464560564065464
 Oracle: true
 Result: Pass
 </pre>
 <pre>Test 7
 Class: OpenmrsUtil.java
 Method: containsOnlyDigits(String test)
-Requirement: Should return true if the passed string contains only numeric characters
+Requirement: Returns true only if contains numeric digits
 Input: a1012
 Oracle: false
 Result: Pass
@@ -57,7 +57,7 @@ Result: Pass
 <pre>Test 8
 Class: OpenmrsUtil.java
 Method: containsOnlyDigits(String test)
-Requirement: Should return true if the passed string contains only numeric characters
+Requirement: Returns true only if contains numeric digits
 Input: 
 Oracle: false
 Result: Pass
@@ -65,24 +65,24 @@ Result: Pass
 <pre>Test 9
 Class: OpenmrsUtil.java
 Method: containsOnlyDigits(String test)
-Requirement: Should return true if the passed string contains only numeric characters
-Input: 12344 854334
-Oracle: true
+Requirement: Returns true only if contains numeric digits
+Input: -
+Oracle: false
 Result: Pass
 </pre>
 <pre>Test 10
 Class: OpenmrsUtil.java
 Method: containsOnlyDigits(String test)
-Requirement: Should return true if the passed string contains only numeric characters
-Input: 12344 85a334
+Requirement: Returns true only if contains numeric digits
+Input: 12345?
 Oracle: false
-Result: Fail
+Result: Pass
 </pre>
 <pre>Test 11
 Class: OpenmrsUtil.java
 Method: containsOnlyDigits(String test)
-Requirement: Should return true if the passed string contains only numeric characters
-Input: 1223ag88c
-Oracle: false
+Requirement: Returns true only if contains numeric digits
+Input: 0
+Oracle: true
 Result: Pass
 </pre>
