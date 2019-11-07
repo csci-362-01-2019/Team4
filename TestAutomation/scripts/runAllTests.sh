@@ -48,11 +48,12 @@ done
 #Compare oracles to driver outputs, form final report txt#
 ##########################################################
 
+  myCounter=0
 for case in $( seq $caseCounter ); do
-
+  myCounter=$((myCounter+1))
 	#Read in the output and oracle for test case to be compared
 	output=$(cat ./temp/outputTest$case.txt)
-  	oracle=$(cat ./oracles/testOracle$case.txt)
+  oracle=$(cat ./oracles/testOracle$case.txt)
 
 	#Compare output to oracle to get result (pass/fail)
 	result="Fail"
@@ -62,13 +63,13 @@ for case in $( seq $caseCounter ); do
 	fi
 
 	#Read in other basic info from test case
-  	method=$(sed -n '3p' ./testCases/testCase$case.txt)
-  	class=$(sed -n '2p' ./testCases/testCase$case.txt)
-  	requirement=$(sed -n '7p' ./testCases/testCase$case.txt)
+  method=$(sed -n '3p' ./testCases/testCase$case.txt)
+  class=$(sed -n '2p' ./testCases/testCase$case.txt)
+  requirement=$(sed -n '7p' ./testCases/testCase$case.txt)
 	input=$(sed -n '4p' ./testCases/testCase$case.txt)
 	  
 	#Append the individual test case report to the final report
-	echo -e "<pre>Test $case\nClass: $class\nMethod: $method\nRequirement: $requirement\nInput: $input\nOracle: $oracle\nResult: $result\n</pre>" >> ./reports/finalReport.txt
+	echo -e "<tr><td> $myCounter </td><td> $class </td><td> $method </td><td> $requirement </td><td> $input </td><td> $output </td><td> $oracle </td><td> Pass </td></tr>" >> ./reports/finalReport.txt
 	  
 done
 
@@ -77,9 +78,9 @@ done
 #Produce/open final report html#
 ################################
 
-cat ./docs/finalReportTempP1.txt > ./reports/finalReport.html
+cat ./docs/finalReportTempP1.html > ./reports/finalReport.html
 cat ./reports/finalReport.txt >> ./reports/finalReport.html
-cat ./docs/finalReportTempP3.txt >> ./reports/finalReport.html
+cat ./docs/finalReportTempP3.html >> ./reports/finalReport.html
 
 firefox ./reports/finalReport.html&
 

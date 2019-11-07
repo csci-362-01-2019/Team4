@@ -1,105 +1,48 @@
-</!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Test Output.html</title>
+	<style>
+		table{
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td, th {
+			border: 5 px solid #dddddd;
+			text-align: left; 
+			padding: 8px:
+		}
+		tr: nth-child(even){
+			background-color: #dddddd;
+		}
+		body{
+			background-color:#85929E;
+		}
+	</style>
 </head>
 <body>
-	<h1> OpenMRS Testing Report</h1>
-	<hr>
-	<u1> 
+	<h2> <CENTER>Test Report </CENTER> </h2>
+	<hr></hr>
+	<table>
+		<tr>
+			<th> Test # </th>	
+			<th> Class </th>
+			<th> Method </th>
+			<th> Requirement </th>
+			<th> Input </th>
+			<th> Output </th>
+			<th> Oracle </th>
+			<th> Result </th>
+		</tr>
 
-		
-
-
-<pre>Test 1
-Class: OpenmrsUtil.java
-Method: convertToInteger(Long longValue)
-Requirement: Returns an Integer from a Long
-Input: 0
-Oracle: 0
-Result: Pass
-</pre>
-<pre>Test 2
-Class: OpenmrsUtil.java
-Method: convertToInteger(Long longValue)
-Requirement: Returns an Integer from a Long
-Input: 2147483647
-Oracle: 2147483647
-Result: Pass
-</pre>
-<pre>Test 3
-Class: OpenmrsUtil.java
-Method: convertToInteger(Long longValue)
-Requirement: Returns an Integer from a Long
-Input: 2147483648
-Oracle: 2147483648 cannot be cast to Integer without changing its value.
-Result: Pass
-</pre>
-<pre>Test 4
-Class: OpenmrsUtil.java
-Method: convertToInteger(Long longValue)
-Requirement: Returns an Integer from a Long
-Input: -2147483648
-Oracle: -2147483648
-Result: Pass
-</pre>
-<pre>Test 5
-Class: OpenmrsUtil.java
-Method: convertToInteger(Long longValue)
-Requirement: Returns an Integer from a Long
-Input: -2147483649
-Oracle: -2147483649 cannot be cast to Integer without changing its value.
-Result: Pass
-</pre>
-<pre>Test 6
-Class: OpenmrsUtil.java
-Method: containsOnlyDigits(String test)
-Requirement: Returns true only if contains numeric digits
-Input: 123451612454654646065056465640560465464560564065464
-Oracle: true
-Result: Pass
-</pre>
-<pre>Test 7
-Class: OpenmrsUtil.java
-Method: containsOnlyDigits(String test)
-Requirement: Returns true only if contains numeric digits
-Input: a1012
-Oracle: false
-Result: Pass
-</pre>
-<pre>Test 8
-Class: OpenmrsUtil.java
-Method: containsOnlyDigits(String test)
-Requirement: Returns true only if contains numeric digits
-Input: 
-Oracle: false
-Result: Pass
-</pre>
-<pre>Test 9
-Class: OpenmrsUtil.java
-Method: containsOnlyDigits(String test)
-Requirement: Returns true only if contains numeric digits
-Input: -
-Oracle: false
-Result: Pass
-</pre>
-<pre>Test 10
-Class: OpenmrsUtil.java
-Method: containsOnlyDigits(String test)
-Requirement: Returns true only if contains numeric digits
-Input: 12345?
-Oracle: false
-Result: Pass
-</pre>
-<pre>Test 11
-Class: OpenmrsUtil.java
-Method: containsOnlyDigits(String test)
-Requirement: Returns true only if contains numeric digits
-Input: 0
-Oracle: true
-Result: Pass
-</pre>
-
-	</u1>
-</body>
-</html>
+<tr><td> 1 </td><td> OpenmrsUtil.java </td><td> convertToInteger(Long longValue) </td><td> Returns an Integer from a Long </td><td> 0 </td><td> 0 </td><td> 0 </td><td> Pass </td></tr>
+<tr><td> 2 </td><td> OpenmrsUtil.java </td><td> convertToInteger(Long longValue) </td><td> Returns an Integer from a Long </td><td> 2147483647 </td><td> 2147483647 </td><td> 2147483647 </td><td> Pass </td></tr>
+<tr><td> 3 </td><td> OpenmrsUtil.java </td><td> convertToInteger(Long longValue) </td><td> Returns an Integer from a Long </td><td> 2147483648 </td><td> 2147483648 cannot be cast to Integer without changing its value. </td><td> 2147483648 cannot be cast to Integer without changing its value. </td><td> Pass </td></tr>
+<tr><td> 4 </td><td> OpenmrsUtil.java </td><td> convertToInteger(Long longValue) </td><td> Returns an Integer from a Long </td><td> -2147483648 </td><td> -2147483648 </td><td> -2147483648 </td><td> Pass </td></tr>
+<tr><td> 5 </td><td> OpenmrsUtil.java </td><td> convertToInteger(Long longValue) </td><td> Returns an Integer from a Long </td><td> -2147483649 </td><td> -2147483649 cannot be cast to Integer without changing its value. </td><td> -2147483649 cannot be cast to Integer without changing its value. </td><td> Pass </td></tr>
+<tr><td> 6 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td> 1234516124546546460650564 </td><td> true </td><td> true </td><td> Pass </td></tr>
+<tr><td> 7 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td> a1012 </td><td> false </td><td> false </td><td> Pass </td></tr>
+<tr><td> 8 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td>  </td><td> false </td><td> false </td><td> Pass </td></tr>
+<tr><td> 9 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td> - </td><td> false </td><td> false </td><td> Pass </td></tr>
+<tr><td> 10 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td> 12345? </td><td> false </td><td> false </td><td> Pass </td></tr>
+<tr><td> 11 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td> 0 </td><td> true </td><td> true </td><td> Pass </td></tr>
