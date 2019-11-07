@@ -1,7 +1,7 @@
 9
 OpenmrsUtil.java
 containsOnlyDigits(String test)
-12344 854334
-true
+-
+false
 driver2
 Returns true only if contains numeric digits
