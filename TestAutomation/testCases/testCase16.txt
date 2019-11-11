@@ -1,0 +1,7 @@
+16
+OpenmrsUtil.java
+containsUpperAndLowerCase(String test)
+ 
+false
+driver5
+Returns true if contains upper and lower case letters
