@@ -80,7 +80,7 @@ done
 
 cat ./docs/finalReportTempP1.html > ./reports/finalReport.html
 cat ./reports/finalReport.txt >> ./reports/finalReport.html
-cat ./docs/finalReportTempP3.html >> ./reports/finalReport.html
+#cat ./docs/finalReportTempP3.html >> ./reports/finalReport.html
 
 firefox ./reports/finalReport.html&
 
