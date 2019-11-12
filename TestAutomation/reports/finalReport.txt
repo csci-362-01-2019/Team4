@@ -10,7 +10,7 @@
 <tr><td> 10 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td> 12345? </td><td> false </td><td> false </td><td> Pass </td></tr>
 <tr><td> 11 </td><td> OpenmrsUtil.java </td><td> containsOnlyDigits(String test) </td><td> Returns true only if contains numeric digits </td><td> 0 </td><td> true </td><td> true </td><td> Pass </td></tr>
 <tr><td> 12 </td><td> OpenmrsUtil.java </td><td> containsDigit(String test) </td><td> Returns true if String contains any digits </td><td> Pizza  </td><td> false </td><td> false </td><td> Pass </td></tr>
-<tr><td> 13 </td><td> OpenmrsUtil.java </td><td> containsDigit(String test) </td><td> Returns true if String contains any digits </td><td> 1432  </td><td> true </td><td> True </td><td> Pass </td></tr>
+<tr><td> 13 </td><td> OpenmrsUtil.java </td><td> containsDigit(String test) </td><td> Returns true if String contains any digits </td><td> 1432  </td><td> true </td><td> True </td><td> Fail </td></tr>
 <tr><td> 14 </td><td> OpenmrsUtil.java </td><td> containsDigit(String test) </td><td> Returns true if String contains any digits </td><td> test3  </td><td> true </td><td> true </td><td> Pass </td></tr>
 <tr><td> 15 </td><td> OpenmrsUtil.java </td><td> containsDigit(String test) </td><td> Returns true if String contains any digits </td><td> .!@#$!$%&*&%()~? </td><td> false </td><td> false </td><td> Pass </td></tr>
 <tr><td> 16 </td><td> OpenmrsUtil.java </td><td> containsUpperAndLowerCase(String test) </td><td> Returns true if contains upper and lower case letters </td><td>   </td><td> false </td><td> false </td><td> Pass </td></tr>
