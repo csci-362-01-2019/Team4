@@ -4,4 +4,4 @@ convertToInteger(Long longValue)
 2147483648
 2147483648 cannot be cast to Integer without changing its value.
 driver1
-Returns an Integer from a Long
+Returns an Integer from a Long (tests assume you're on a 32-bit system)

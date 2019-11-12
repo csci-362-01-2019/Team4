@@ -52,7 +52,7 @@ for case in $( seq $caseCounter ); do
 
 	#Read in the output and oracle for test case to be compared
 	output=$(cat ./temp/outputTest$case.txt)
-  oracle=$(cat ./oracles/testOracle$case.txt)
+  	oracle=$(cat ./oracles/testOracle$case.txt)
 
 	#Compare output to oracle to get result (pass/fail)
 	result="Fail"
@@ -62,9 +62,9 @@ for case in $( seq $caseCounter ); do
 	fi
 
 	#Read in other basic info from test case
-  method=$(sed -n '3p' ./testCases/testCase$case.txt)
-  class=$(sed -n '2p' ./testCases/testCase$case.txt)
-  requirement=$(sed -n '7p' ./testCases/testCase$case.txt)
+  	method=$(sed -n '3p' ./testCases/testCase$case.txt)
+  	class=$(sed -n '2p' ./testCases/testCase$case.txt)
+  	requirement=$(sed -n '7p' ./testCases/testCase$case.txt)
 	input=$(sed -n '4p' ./testCases/testCase$case.txt)
 	  
 	#Append the individual test case report to the final report

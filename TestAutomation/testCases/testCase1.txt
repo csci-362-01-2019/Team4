@@ -4,4 +4,4 @@ convertToInteger(Long longValue)
 0
 0
 driver1
-Returns an Integer from a Long
+Returns an Integer from a Long (tests assume you're on a 32-bit system)
