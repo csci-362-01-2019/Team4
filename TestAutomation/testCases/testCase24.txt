@@ -1,0 +1,7 @@
+24
+OpenmrsUtil.java
+isStringInArray(String str, String[] arr)
+- eggs taco pizza 123 42 - cheese
+true
+driver6
+Returns true if a String is included in a String array.
