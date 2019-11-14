@@ -10,7 +10,7 @@ public class driver2
 			if(args.length>0)
 				System.out.println(OpenmrsUtil.containsOnlyDigits(args[0]));
 			else
-				System.out.println(OpenmrsUtil.containsOnlyDigits(null));
+				System.out.println(OpenmrsUtil.containsOnlyDigits(""));
 		}
 		catch(Exception e)
 		{

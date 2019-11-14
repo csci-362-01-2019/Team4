@@ -17,7 +17,7 @@ cd ..
 #Read in each test case, run them, add results to final report#
 ###############################################################
 
-#Initialize case number
+#Initialize case number to ensure test cases are run in order
 caseNum=0
 
 for file in testCases/*.txt; do	
@@ -34,7 +34,7 @@ for file in testCases/*.txt; do
 	driver=$(sed -n '6p' ./testCases/testCase$caseNum.txt)
   	requirement=$(sed -n '7p' ./testCases/testCase$caseNum.txt)
 
-	#Find output of method driver using input
+	#Find output of method using the input and the specified driver
 	cd testCasesExecutables
 	output=$(java -cp openmrs-api.jar: $driver $input)
 	cd ..
