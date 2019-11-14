@@ -34,7 +34,7 @@ for file in testCases/*.txt; do
 	driver=$(sed -n '6p' ./testCases/testCase$caseNum.txt)
   	requirement=$(sed -n '7p' ./testCases/testCase$caseNum.txt)
 
-	#Find output of method using the input and the specified driver
+	#Find output of the method driver using input
 	cd testCasesExecutables
 	output=$(java -cp openmrs-api.jar: $driver $input)
 	cd ..
