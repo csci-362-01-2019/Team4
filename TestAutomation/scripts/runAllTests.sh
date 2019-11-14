@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#Removes all txt files in oracles/temp/reports directories
-rm -rf ./oracles/*.txt
-rm -rf ./temp/*.txt
+#Removes report files from reports directory
 rm -rf ./reports/*.txt
 rm -rf ./reports/finalReport.html
 
