@@ -1,7 +1,7 @@
 20
 OpenmrsUtil.java
 containsUpperAndLowerCase(String test)
-TOTA
-false
+TOTa
+true
 driver5
 Returns true if contains upper and lower case letters
