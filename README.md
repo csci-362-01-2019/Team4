@@ -5,7 +5,7 @@ This is a basic test automation framework for the OpenMRS software.
 
 # Installation and Execution Steps
 Step 0: Ubuntu 18LTS, any other version was not tested, Java 8, Firefox. 
-
+    Note: Maven may need to be pointed to the Java 8 JRE
 
 Step 1: Clone the Team4 github repository onto your machine.
 
